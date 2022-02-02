@@ -11,6 +11,7 @@ class Node{
     void setEsq(Node nf){
         this.esq = nf;
     }
+    
     void setDret(Node nf){
         this.dret = nf;
     }

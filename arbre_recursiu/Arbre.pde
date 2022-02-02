@@ -35,4 +35,21 @@ class Arbre{
         if(n.esq != null){ display(n.esq,x-dx, y+100, r, lvl+1);}
         if(n.dret != null){display(n.dret,x+dx, y+100, r, lvl+1);}
     }
+
+    int getMinim(){
+        Node pare = this.arrel;
+        while(pare.esq!=null){
+            pare = pare.esq;
+        }
+        return pare.num;
+    }
+
+    int getMaxim(){
+        Node pare = this.arrel;
+        while(pare.dret!=null){
+            pare = pare.esq;
+        }
+        return pare.num;
+    }
+    
 }
